@@ -1,0 +1,2346 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/setting.css">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./icon/css/all.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header w-full h-[100px] bg-white">
+        <div class="menu-l 2xl:flex xl:flex lg:flex md:hidden sm:hidden hidden w-full h-full">
+          <div class="right 2xl:w-6/12 xl:w-8/12 lg:w-8/12 h-full flex items-center">
+            <div class="logo w-2/12 h-full flex justify-center items-center cursor-pointer">
+              <img src="./img/header/mftlogo.png" alt="" class="w-8/12">
+            </div>
+            <div class="nav w-10/12 h-3/6 flex flex-row ">
+              <ul class="w-full h-full flex flex-row">
+                <li class="w-auto text-sm font-medium p-3 mr-1 cursor-pointer text-gray-400">خانه</li>
+
+                <li class="w-auto text-sm font-medium p-3 mr-2 cursor-pointer text-gray-400">دپارتمان ها</li>
+
+                <li class="w-auto text-sm font-medium p-3 mr-2 cursor-pointer text-gray-400">مراکز</li>
+
+                <li class="w-auto text-sm font-medium p-3 mr-2 cursor-pointer text-gray-400">تقویم آموزشی</li>
+
+                <li class="main01 w-auto text-sm font-medium p-3 mr-2 cursor-pointer text-gray-400 relative" data-bs-toggle="menu01">
+                  خدمات آموزشی
+                  <div class="sub01 w-[300px] h-auto hidden absolute top-12 right-0 rounded-md pb-2">
+                    <ul class="w-full h-full bg-white rounded-md pt-1 pb-1">
+                      <li class="w-[95%] p-2  mx-auto rounded-md text-black mb-1"> امور نمایندگی‌ها 
+                      </li>
+                      <li class="w-[95%] p-2  mx-auto rounded-md text-black mb-1"> امور بین‌الملل 
+                      </li>
+                      <li class="w-[95%] p-2  mx-auto rounded-md text-black mb-1"> آموزش‌های سازمانی 
+                      </li>
+                      <li class="w-[95%] p-2  mx-auto rounded-md text-black mb-1"> کاریابی الکترونیکی (کارتلنت) 
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="main02 w-auto text-sm font-medium p-3 mr-2 relative cursor-pointer text-gray-400" data-bs-toggle="menu02">
+                  روابط عمومی
+                  <div class="sub02 w-[300px] h-auto hidden absolute top-12 right-0 rounded-md pb-2">
+                    <ul class="w-full h-full bg-white rounded-md pt-1 pb-1">
+                      <li class="w-[95%] p-2  mx-auto rounded-md text-black mb-1"> اخبار  
+                      </li>
+                      <li class="w-[95%] p-2  mx-auto rounded-md text-black mb-1">  مقالات 
+                      </li>
+                      <li class="w-[95%] p-2  mx-auto rounded-md text-black mb-1">  خبرنامه 
+                      </li>
+                      <li class="w-[95%] p-2  mx-auto rounded-md text-black mb-1"> مسئولیت‌های اجتماعی الکترونیکی (CSR) 
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="left 2xl:w-6/12 xl:w-4/12 lg:w-4/12 h-full flex items-center">
+            <div class="a w-full h-3/6 flex items-center" dir="ltr">
+              <div class="hesab 2xl:w-2/12 xl:w-4/12 lg:w-4/12 p-1 ml-5 relative flex justify-center items-center cursor-pointer">
+                <i class="fas fa-sort-down relative text-xl text-blue-600 top-[-7px]"></i>
+                <p> حساب کاربری </p>
+              </div>
+              <div class="user w-[35px] h-[35px] cursor-pointer flex items-center justify-center">
+                   <i class="fas fa-user text-xl"></i>
+              </div>
+              <div class="search w-[35px] h-[35px] cursor-pointer flex items-center justify-center ml-7">
+                  <i class="fas fa-search"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-sm 2xl:hidden xl:hidden lg:hidden md:flex sm:flex flex w-full h-full bg-white items-center" dir="ltr">
+          <div class="left w-2/12 h-3/6 flex items-center" >
+            <div class="search w-[35px] h-[35px] cursor-pointer flex items-center justify-center ml-3 bg-slate-400">
+              <i class="fas fa-search"></i>
+          </div>
+          </div>
+
+          <div class="center w-8/12 h-full flex items-center justify-center">
+            <div class="w-[250px] h-full flex items-center justify-center">
+              <img src="./img/header/mftlogo.png" alt="" class="w-7/12">
+            </div>
+          </div>
+
+          <div class="right w-2/12 h-3/6 flex items-center" dir="rtl">
+            <div class="menu w-[35px] h-[35px] cursor-pointer flex items-center justify-center mr-3 bg-slate-400">
+              <div class="sub03 w-screen h-[640px] bg-white pt-1 top-[100px] left-0 z-50 absolute hidden">
+                <div class="panel w-full h-[55px] p-2 flex">
+                  <div class="partial w-6/12 h-full ml-2 pr-4 pt-1 rounded-lg">
+                    <i class="fas fa-user-graduate ml-2"></i>
+                     پنل دانشپذیر 
+                    </div>
+                  <div class="partial w-6/12 h-full mr-2 pr-4 pt-1 rounded-lg"> 
+                    <i class="fas fa-user-tie ml-2"></i>
+                    پنل اساتید 
+                  </div>
+                </div>
+                <ul class="w-full h-full overflow-y-scroll">
+                  <li class="w-full py-3 px-10 text-base text-gray-800"> خانه </li>
+                  <li class="w-full py-3 px-10 text-base text-gray-800"> دپارتمان‌ها </li>
+                  <li class="w-full py-3 px-10 text-base text-gray-800"> مراکز </li>
+                  <li class="w-full py-3 px-10 text-base text-gray-800"> تقویم آموزشی </li>
+                  <li class="w-full py-3 px-10 text-base text-gray-800"> خدمات آموزشی </li>
+                  <li class="w-full py-3 px-16 text-sm text-gray-600"> امور نمایندگیها</li>
+                  <li class="w-full py-3 px-16 text-sm text-gray-600"> امور بین‌الملل</li>
+                  <li class="w-full py-3 px-16 text-sm text-gray-600"> آموزش‌های سازمانی</li>
+                  <li class="w-full py-3 px-16 text-sm text-gray-600"> کاریابی الکترونیکی</li>
+                  <li class="w-full py-3 px-10 text-base text-gray-800"> روابط عمومی </li>
+                  <li class="w-full py-3 px-16 text-sm text-gray-600">  اخبار</li>
+                  <li class="w-full py-3 px-16 text-sm text-gray-600">  مقالات</li>
+                  <li class="w-full py-3 px-16 text-sm text-gray-600">  خبرنامه</li>
+                  <li class="w-full py-3 px-16 text-sm text-gray-600 mb-20">  مسئولیت‌های اجتماعی</li>
+                </ul>
+              </div>
+              <i class="fas fa-bars"></i>
+          </div>
+          </div>
+      </div>
+      </div>
+
+      <div class="off w-11/12 h-auto p-2 bg-[#ff9958] mx-auto mt-6 rounded-2xl text-center cursor-pointer">
+        <p class="2xl:text-2xl xl:text-2xl lg:text-2xl md:text-2xl sm:text-2xl text-lg font-medium"> شروع ثبت نام کمپ های نوروز 1402با تخفیفات ویژه </p>
+        <p class="2xl:text-lg xl:text-lg lg:text-lg md:text-lg sm:text-lg text-xs mt-4"> تخفیفات پلکانی كمپ نوروزی از 11 دی ماه تا 29 اسفند</p>
+      </div>
+
+      <div class="container01 2xl:w-11/12 xl:w-11/12 lg:w-full md:w-11/12 sm:w-11/12 w-11/12 h-auto mx-auto mt-7 text-center flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-col justify-center overflow-hidden" dir="ltr">
+        <div class="left 2xl:w-7/12 xl:w-7/12 lg:w-7/12 md:w-full sm:w-full w-full h-full flex justify-center items-center cursor-pointer">
+          <div class="slider w-11/12 h-full pt-2 ">
+            <div class="swiper mySwiper w-full">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/slider/01.gif" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/slider/02.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/slider/03.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/slider/04.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/slider/05.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/slider/06.jpeg" alt="" />
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right 2xl:w-4/12 xl:w-4/12 lg:w-4/12 2xl:flex xl:flex lg:flex md:hidden sm:hidden hidden h-full text-right flex-col" dir="rtl">
+          <div class="tittle w-11/12 text-base font-medium pr-2 "> مجتمع فنی تهران، پیشرو در حوزه مهارت آموزی و توسعه اشتغال مولد.</div>
+          <div class="p w-11/12 text-xs font-medium pr-2 mt-4"> مجتمع فنی تهران ماموریت خود را توسعه اشتغال و کار آفرینی از طریق آموزش های مهارت محور می داند.</div>
+          <div class="departman w-5/12 p-2 bg-[#6a89cc] text-center mt-5 rounded-3xl mr-2 text-white text-xs font-medium cursor-pointer"> مشاهده دپارتمان ها </div>
+          <div class="departman01 w-10/12 h-auto text-center mt-5 rounded-3xl  cursor-pointer flex">
+            <div class="partial w-auto px-6 py-2 text-[#6a89cc] text-center  rounded-3xl mr-2 text-xs font-medium cursor-pointer"> علوم مهندسی </div>
+
+            <div class="partial w-auto px-6 py-2 text-[#6a89cc] text-center  rounded-3xl mr-2 text-xs font-medium cursor-pointer"> کودک و نوجوان </div>
+          </div>
+          <div class="departman01 w-10/12 h-auto text-center mt-1 rounded-3xl  cursor-pointer flex">
+            <div class="partial w-auto px-6 py-2 text-[#6a89cc] text-center  rounded-3xl mr-2 text-xs font-medium cursor-pointer"> فناوری مد و پوشاک </div>
+
+            <div class="partial w-auto px-6 py-2 text-[#6a89cc] text-center  rounded-3xl mr-2 text-xs font-medium cursor-pointer"> هنر و سینما </div>
+          </div>
+          <div class="departman01 w-10/12 h-auto text-center mt-1 rounded-3xl  cursor-pointer flex">
+            <div class="partial w-auto px-6 py-2 text-[#6a89cc] text-center  rounded-3xl mr-2 text-xs font-medium cursor-pointer"> علوم مالی و حسابداری </div>
+        </div>
+      </div>
+
+      </div>
+
+      <div class="shortcut w-full h-[280px] bg-[#fafafa] mt-16 grid grid-flow-col items-center 2xl:overflow-hidden xl:overflow-hidden lg:overflow-x-scroll md:overflow-x-scroll sm:overflow-x-scroll overflow-x-scroll">
+        <div class="partial w-[260px] h-[200px] rounded-[60px] mx-8 cursor-pointer flex flex-col items-center relative">
+          <div class="img w-5/12 h-[90px] mt-3 flex justify-center">
+            <img src="./img/short cut/p1.svg" alt="" class="w-7/12 z-10">
+          </div>
+          <div class="sircle w-[18px] h-[18px] bg-[#FAD390] absolute top-1 right-20 rounded-3xl"></div>
+          <div class="sircle w-[10px] h-[10px] bg-[#FAD390] absolute top-20 right-20 rounded-3xl"></div>
+          <div class="sircle w-[5px] h-[5px] bg-[#FAD390] absolute top-20 right-36 rounded-3xl"></div>
+          <div class="tittle w-full p-1 mt-1 text-center text-base font-medium"> تقویم آموزشی </div>
+          <div class="tittle w-10/12 p-1 mt-1 text-center text-xs font-medium text-gray-500"> اولین و برترین آموزشگاه خصوصی در کشور ایران </div>
+        </div>
+
+        <div class="partial w-[260px] h-[200px] rounded-[60px] mx-8 cursor-pointer flex flex-col items-center relative">
+          <div class="img w-5/12 h-[90px] mt-3 flex justify-center">
+            <img src="./img/short cut/p4.svg" alt="" class="w-7/12 z-10">
+          </div>
+          <div class="sircle w-[18px] h-[18px] bg-[#079992] absolute top-1 right-24 rounded-3xl"></div>
+          <div class="sircle w-[10px] h-[10px] bg-[#079992] absolute top-20 right-20 rounded-3xl"></div>
+          <div class="sircle w-[5px] h-[5px] bg-[#079992] absolute top-16 right-40 rounded-3xl"></div>
+          <div class="tittle w-full p-1 mt-1 text-center text-base font-medium"> نمایندگی‌های فعال  </div>
+          <div class="tittle w-10/12 p-1 mt-1 text-center text-xs font-medium text-gray-500"> با بیش از 50 نمایندگی معتبر در سرتاسر ایران و کشورهای همسایه </div>
+        </div>
+
+        <div class="partial w-[260px] h-[200px] rounded-[60px] mx-8 cursor-pointer flex flex-col items-center relative">
+          <div class="img w-5/12 h-[90px] mt-3 flex justify-center">
+            <img src="./img/short cut/p2.svg" alt="" class="w-7/12 z-10">
+          </div>
+          <div class="sircle w-[18px] h-[18px] bg-[#90A4AE] absolute top-2 right-24 rounded-3xl"></div>
+          <div class="sircle w-[10px] h-[10px] bg-[#90A4AE] absolute top-20 right-20 rounded-3xl"></div>
+          <div class="sircle w-[5px] h-[5px] bg-[#90A4AE] absolute top-20 right-44 rounded-3xl"></div>
+          <div class="tittle w-full p-1 mt-1 text-center text-base font-medium"> استعلام مدارک </div>
+          <div class="tittle w-10/12 p-1 mt-1 text-center text-xs font-medium text-gray-500"> استعلام آنلاین کلیه مدارک به صورت تاییدی و الکترونیکی</div>
+        </div>
+
+        <div class="partial w-[260px] h-[200px] bg-white rounded-[60px] mx-8 cursor-pointer flex flex-col items-center relative">
+          <div class="img w-5/12 h-[90px] mt-3 flex justify-center">
+            <img src="./img/short cut/p3.svg" alt="" class="w-7/12 z-30">
+          </div>
+          <div class="sircle w-[18px] h-[18px] bg-[#880E4F] absolute top-2 right-24 rounded-3xl"></div>
+          <div class="sircle w-[10px] h-[10px] bg-[#880E4F] absolute top-16 right-20 rounded-3xl"></div>
+          <div class="sircle w-[5px] h-[5px] bg-[#880E4F] absolute top-24 right-44 rounded-3xl"></div>
+          <div class="tittle w-full p-1 mt-1 text-center text-base font-medium"> شیوه‌های اجرا </div>
+          <div class="tittle w-10/12 p-1 mt-1 text-center text-xs font-medium text-gray-500">4 شیوه برگزاری دوره ها در مجتمع فنی تهران</div>
+        </div>
+      </div>
+
+      <div class="departman w-full h-auto pt-7 mt-12 flex flex-col" >
+        <div class="tittle w-full h-[50px] p-2 pr-5 text-2xl font-semibold flex flex-row mb-2"> 
+          <img src="./img/departmen/images (2).png" alt="" class="w-[40px] ml-3">
+          دپارتمان‌ها 
+        </div>
+        <div class="part 2xl:w-11/12 xl:w-11/12 lg:w-full md:w-full sm:w-full w-full h-full flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-col mx-auto">
+          <ul class="2xl:w-4/12 h-auto xl:w-4/12 lg:w-4/12 md:w-full">
+            <li class="w-11/12 p-1 2xl:mb-10 xl:mb-10 lg:mb-10 md:mb-1 sm:mb-1 mb-1 mx-auto rounded-lg flex">
+              <div class="icon w-[60px] h-[60px]">
+                <img src="./img/departmen/1-1.png" alt="" class="">
+              </div>
+              <div class="left w-full h-full">
+                <div class="tittle mr-3 text-lg font-medium"> فناوری اطلاعات و ارتباطات </div>
+              <div class="tittle mr-3 text-xs "> با طی دوره های تخصصی و مهارتی در مرکز آموزشهای ICT مجتمع فنی تهران با دنیای IT همگام باشید.</div>
+              </div>
+            </li>
+
+            <li class="w-11/12 p-1 2xl:mb-10 xl:mb-10 lg:mb-10 md:mb-1 sm:mb-1 mb-1 mx-auto rounded-lg flex">
+              <div class="icon w-[60px] h-[60px]">
+                <img src="./img/departmen/1-2.png" alt="" class="">
+              </div>
+              <div class="left w-full h-full">
+                <div class="tittle mr-3 text-lg font-medium"> 
+                  کودک و نوجوان</div>
+              <div class="tittle mr-3 text-xs ">آموزش مفاهیم کاربردی و مهارتی،مطابق با استانداردهای روز دنیا برای کودکان و نوجوانان تا رسیدن به موفقیت</div>
+              </div>
+            </li>
+
+            <li class="w-11/12 p-1 2xl:mb-10 xl:mb-10 lg:mb-10 md:mb-1 sm:mb-1 mb-1 mx-auto rounded-lg flex">
+              <div class="icon w-[60px] h-[60px]">
+                <img src="./img/departmen/1-3.png" alt="" class="">
+              </div>
+              <div class="left w-full h-full">
+                <div class="tittle mr-3 text-lg font-medium"> 
+                  معماری</div>
+              <div class="tittle mr-3 text-xs "> مجری دوره های تخصصی دکوراسیون داخلی و معماری، نرم افزارهای تخصصی معماری باهدف بازارکار داخلی وبین المللی</div>
+              </div>
+            </li>
+
+            <li class="w-11/12 p-1 2xl:mb-10 xl:mb-10 lg:mb-10 md:mb-1 sm:mb-1 mb-1 mx-auto rounded-lg flex">
+              <div class="icon w-[60px] h-[60px]">
+                <img src="./img/departmen/1-4.png" alt="" class="">
+              </div>
+              <div class="left w-full h-full">
+                <div class="tittle mr-3 text-lg font-medium"> 
+                  مرکز همکاری های بین الملل</div>
+              <div class="tittle mr-3 text-xs "> اعطای مدارک معتبر بین المللی، مشاوره و اعزام تحصیلی، تورهای آموزشی بین المللی، ترجمه رسمی گواهی نامه های مجتمع فنی تهران و</div>
+              </div>
+            </li>
+
+            <li class="w-11/12 p-1 2xl:mb-10 xl:mb-10 lg:mb-10 md:mb-1 sm:mb-1 mb-1 mx-auto rounded-lg flex">
+              <div class="icon w-[60px] h-[60px]">
+                <img src="./img/departmen/1-5.png" alt="" class="">
+              </div>
+              <div class="left w-full h-full">
+                <div class="tittle mr-3 text-lg font-medium"> 
+                  صنایع دریایی</div>
+              <div class="tittle mr-3 text-xs "> 
+                تربیت نیروی متخصص در زمینه غواصی صنعتی و امور دریایی مطابق با استاندارد جهانی</div>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="2xl:w-4/12 h-auto xl:w-4/12 lg:w-4/12 md:w-full">
+            <li class="w-11/12 p-1 2xl:mb-10 xl:mb-10 lg:mb-10 md:mb-1 sm:mb-1 mb-1 mx-auto rounded-lg flex">
+              <div class="icon w-[60px] h-[60px]">
+                <img src="./img/departmen/2-1.png" alt="" class="">
+              </div>
+              <div class="left w-full h-full">
+                <div class="tittle mr-3 text-lg font-medium"> علوم مهندسی</div>
+              <div class="tittle mr-3 text-xs "> پیشرو در اجرای آموزشهای تخصصی فنی-مهندسی</div>
+              </div>
+            </li>
+
+            <li class="w-11/12 p-1 2xl:mb-10 xl:mb-10 lg:mb-10 md:mb-1 sm:mb-1 mb-1 mx-auto rounded-lg flex">
+              <div class="icon w-[60px] h-[60px]">
+                <img src="./img/departmen/2-2.png" alt="" class="">
+              </div>
+              <div class="left w-full h-full">
+                <div class="tittle mr-3 text-lg font-medium"> 
+                  زبانهای خارجی</div>
+              <div class="tittle mr-3 text-xs "> برگزاری دوره های زبان طبق استاندارد CEFR، دوره های آمادگی آزمون های بین المللی زبان، آنلاین و حضوری </div>
+              </div>
+            </li>
+
+            <li class="w-11/12 p-1 2xl:mb-10 xl:mb-10 lg:mb-10 md:mb-1 sm:mb-1 mb-1 mx-auto rounded-lg flex">
+              <div class="icon w-[60px] h-[60px]">
+                <img src="./img/departmen/2-3.png" alt="" class="">
+              </div>
+              <div class="left w-full h-full">
+                <div class="tittle mr-3 text-lg font-medium"> 
+                  فناوری مد و پوشاک</div>
+              <div class="tittle mr-3 text-xs ">پیشرو در ارائه دوره های آموزشی در صنعت مد و پوشاک همگام با نیاز های جامعه</div>
+              </div>
+            </li>
+
+            <li class="w-11/12 p-1 2xl:mb-10 xl:mb-10 lg:mb-10 md:mb-1 sm:mb-1 mb-1 mx-auto rounded-lg flex">
+              <div class="icon w-[60px] h-[60px]">
+                <img src="./img/departmen/2-4.png" alt="" class="">
+              </div>
+              <div class="left w-full h-full">
+                <div class="tittle mr-3 text-lg font-medium"> 
+                  تشریفات و گردشگری</div>
+              <div class="tittle mr-3 text-xs "> مجری برتر دوره های مدیریت کافی شاپ،آشپزی ملل،هتلداری و ... طبق بروزترین استانداردهای آموزشی و مهارتی</div>
+              </div>
+            </li>
+
+            <li class="w-11/12 p-1 2xl:mb-10 xl:mb-10 lg:mb-10 md:mb-1 sm:mb-1 mb-1 mx-auto rounded-lg flex">
+              <div class="icon w-[60px] h-[60px]">
+                <img src="./img/departmen/2-5.png" alt="" class="">
+              </div>
+              <div class="left w-full h-full">
+                <div class="tittle mr-3 text-lg font-medium"> 
+                  تولید محتوا </div>
+              <div class="tittle mr-3 text-xs "> 
+                تولید محتوا را از مبتدی تا پیشرفته با ما بیاموزید تا به بازاریابی و برندسازی کسب و کارتان کمک نمایید</div>
+              </div>
+            </li>
+          </ul>
+
+          <ul class=" 2xl:w-4/12 h-auto xl:w-4/12 lg:w-4/12 md:w-full ">
+            <li class="w-11/12 p-1 2xl:mb-10 xl:mb-10 lg:mb-10 md:mb-1 sm:mb-1 mb-1 mx-auto rounded-lg flex">
+              <div class="icon w-[60px] h-[60px]">
+                <img src="./img/departmen/3-1.png" alt="" class="">
+              </div>
+              <div class="left w-full h-full">
+                <div class="tittle mr-3 text-lg font-medium"> برق و الکترونیک </div>
+              <div class="tittle mr-3 text-xs ">  پیشگام در آموزش دوره های تخصصی برق، الکترونیک و اتوماسیون صنعتی با بیش از چهار دهه تجربه</div>
+              </div>
+            </li>
+
+            <li class="w-11/12 p-1 2xl:mb-10 xl:mb-10 lg:mb-10 md:mb-1 sm:mb-1 mb-1 mx-auto rounded-lg flex">
+              <div class="icon w-[60px] h-[60px]">
+                <img src="./img/departmen/3-2.png" alt="" class="">
+              </div>
+              <div class="left w-full h-full">
+                <div class="tittle mr-3 text-lg font-medium"> 
+                  دانش سلامت</div>
+              <div class="tittle mr-3 text-xs "> پيشرو در آموزش دوره هاي تخصصي و مهارتي سلامت و زيبايي همراه با مدارك معتبر و بين المللي ، جهت ورود به بازار كار در ايران و خارج از كشور</div>
+              </div>
+            </li>
+
+            <li class="w-11/12 p-1 2xl:mb-10 xl:mb-10 lg:mb-10 md:mb-1 sm:mb-1 mb-1 mx-auto rounded-lg flex">
+              <div class="icon w-[60px] h-[60px]">
+                <img src="./img/departmen/3-3.png" alt="" class="">
+              </div>
+              <div class="left w-full h-full">
+                <div class="tittle mr-3 text-lg font-medium"> 
+                  هنر و سینما</div>
+              <div class="tittle mr-3 text-xs ">برگزاری دوره های تخصصی: طراحی و نقاشی، سینما، گویندگی، هنردکوراتیو، گرافیک دو بعدی و سه بعدی، موشن و </div>
+              </div>
+            </li>
+
+            <li class="w-11/12 p-1 2xl:mb-10 xl:mb-10 lg:mb-10 md:mb-1 sm:mb-1 mb-1 mx-auto rounded-lg flex">
+              <div class="icon w-[60px] h-[60px]">
+                <img src="./img/departmen/3-4.png" alt="" class="">
+              </div>
+              <div class="left w-full h-full">
+                <div class="tittle mr-3 text-lg font-medium"> 
+                  علوم مالی و حسابداری </div>
+              <div class="tittle mr-3 text-xs ">  آموزش حسابداری، مالی، بورس، سرمایه گذاری و ارزهای دیجیتال کاربردی، بامنتور وهدف کارآفرینی و اشتغال</div>
+              </div>
+            </li>
+
+            <li class="w-11/12 p-1 2xl:mb-10 xl:mb-10 lg:mb-10 md:mb-1 sm:mb-1 mb-1 mx-auto rounded-lg flex">
+              <div class="icon w-[60px] h-[60px]">
+                <img src="./img/departmen/3-5.png" alt="" class="">
+              </div>
+              <div class="left w-full h-full">
+                <div class="tittle mr-3 text-lg font-medium"> 
+                  مدیریت و کسب و کار  </div>
+              <div class="tittle mr-3 text-xs "> 
+                برگزارکننده دوره های آموزشی تخصصی مدیریت و مجری تحصیلات تکمیلی MBA و DBA</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dore w-full h-auto pt-7 mt-0 mb-24 flex flex-col">
+        <div class="tittle w-full h-[50px] p-2 pr-5 text-2xl font-semibold flex flex-row"> 
+          <img src="./img/departmen/1646652.png" alt="" class="w-[40px] ml-0">
+          دوره‌ها 
+        </div>
+        <div class="tittle w-10/12 h-[50px] p-2 pr-5 text-lg font-semibold flex flex-row mt-8 mb-2 mr-16"> 
+          پیشنهاد سایت 
+        </div>
+        <div class="part 2xl:w-10/12 xl:w-10/12 lg:w-10/12 md:w-10/12 sm:w-10/12 w-10/12 h-[480px] mx-auto 2xl:flex xl:hidden lg:hidden md:hidden sm:hidden hidden">
+          <div class="swiper mySwiper01">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    افترافکت(After Effects)
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      سیدخندان
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/01.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۷۸
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    هنر و سینما
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۶ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                    مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۳۸,۰۸۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    زبان فرانسه A1.3
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      سعادت آباد (مرکزی)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      آنلاین
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/02.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۳۶
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    زبانهای خارجی
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع شنبه ۲۲ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۶ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     غزل صدرالاشرافی
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۱۱,۲۸۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    مراقبت و زیبایی های مو
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      باملند(شمال غرب)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/03.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۵۰
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    دانش سلامت
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۴ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۵۴,۰۰۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    Sketchup & Vray
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      قیطریه
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      آنلاین/حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/04.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۴۰
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    معماری
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۳ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۲۲,۰۰۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    ایاستریتور
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      سعادت آباد(مرکزی)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      آنلاین
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/05.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۴۰
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    هنر و سینما
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۵ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۱۳,۲۵۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    مدیریت بر خویشتن
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                       باملندشمال غرب)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/06.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۳۹
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    دانش و سلامت
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۵ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                      دکتر مریم فرضی
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۱۲,۲۱۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        
+        <div class="part 2xl:w-10/12 xl:w-11/12 lg:w-10/12 md:w-10/12 sm:w-10/12 w-10/12 h-[480px] mx-auto 2xl:hidden xl:flex lg:hidden md:hidden sm:hidden hidden">
+          <div class="swiper mySwiper01">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    افترافکت(After Effects)
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      سیدخندان
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/01.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۷۸
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    هنر و سینما
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۶ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                    مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۳۸,۰۸۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    زبان فرانسه A1.3
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      سعادت آباد (مرکزی)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      آنلاین
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/02.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۳۶
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    زبانهای خارجی
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع شنبه ۲۲ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۶ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     غزل صدرالاشرافی
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۱۱,۲۸۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    مراقبت و زیبایی های مو
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      باملند(شمال غرب)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/03.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۵۰
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    دانش سلامت
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۴ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۵۴,۰۰۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    Sketchup & Vray
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      قیطریه
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      آنلاین/حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/04.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۴۰
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    معماری
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۳ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۲۲,۰۰۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    ایاستریتور
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      سعادت آباد(مرکزی)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      آنلاین
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/05.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۴۰
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    هنر و سینما
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۵ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۱۳,۲۵۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    مدیریت بر خویشتن
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                       باملندشمال غرب)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/06.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۳۹
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    دانش و سلامت
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۵ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                      دکتر مریم فرضی
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۱۲,۲۱۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="part 2xl:w-10/12 xl:w-11/12 lg:w-11/12 md:w-10/12 sm:w-10/12 w-10/12 h-[480px] mx-auto 2xl:hidden xl:hidden lg:flex md:hidden sm:hidden hidden">
+          <div class="swiper mySwiper02">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    افترافکت(After Effects)
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      سیدخندان
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/01.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۷۸
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    هنر و سینما
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۶ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                    مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۳۸,۰۸۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    زبان فرانسه A1.3
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      سعادت آباد (مرکزی)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      آنلاین
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/02.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۳۶
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    زبانهای خارجی
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع شنبه ۲۲ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۶ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     غزل صدرالاشرافی
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۱۱,۲۸۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    مراقبت و زیبایی های مو
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      باملند(شمال غرب)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/03.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۵۰
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    دانش سلامت
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۴ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۵۴,۰۰۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    Sketchup & Vray
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      قیطریه
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      آنلاین/حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/04.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۴۰
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    معماری
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۳ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۲۲,۰۰۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    ایاستریتور
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      سعادت آباد(مرکزی)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      آنلاین
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/05.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۴۰
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    هنر و سینما
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۵ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۱۳,۲۵۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    مدیریت بر خویشتن
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                       باملندشمال غرب)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/06.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۳۹
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    دانش و سلامت
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۵ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                      دکتر مریم فرضی
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۱۲,۲۱۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="part 2xl:w-10/12 xl:w-11/12 lg:w-11/12 md:w-10/12 sm:w-10/12 w-10/12 h-[480px] mx-auto 2xl:hidden xl:hidden lg:hidden md:flex sm:hidden hidden">
+          <div class="swiper mySwiper03">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    افترافکت(After Effects)
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      سیدخندان
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/01.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۷۸
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    هنر و سینما
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۶ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                    مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۳۸,۰۸۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    زبان فرانسه A1.3
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      سعادت آباد (مرکزی)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      آنلاین
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/02.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۳۶
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    زبانهای خارجی
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع شنبه ۲۲ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۶ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     غزل صدرالاشرافی
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۱۱,۲۸۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    مراقبت و زیبایی های مو
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      باملند(شمال غرب)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/03.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۵۰
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    دانش سلامت
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۴ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۵۴,۰۰۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    Sketchup & Vray
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      قیطریه
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      آنلاین/حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/04.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۴۰
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    معماری
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۳ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۲۲,۰۰۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    ایاستریتور
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      سعادت آباد(مرکزی)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      آنلاین
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/05.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۴۰
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    هنر و سینما
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۵ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۱۳,۲۵۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    مدیریت بر خویشتن
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                       باملندشمال غرب)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/06.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۳۹
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    دانش و سلامت
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۵ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                      دکتر مریم فرضی
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۱۲,۲۱۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="part 2xl:w-10/12 xl:w-11/12 lg:w-11/12 md:w-11/12 sm:w-11/12 w-11/12 h-[480px] mx-auto 2xl:hidden xl:hidden lg:hidden md:hidden sm:flex hidden">
+          <div class="swiper mySwiper04">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    افترافکت(After Effects)
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      سیدخندان
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/01.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۷۸
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    هنر و سینما
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۶ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                    مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۳۸,۰۸۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    زبان فرانسه A1.3
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      سعادت آباد (مرکزی)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      آنلاین
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/02.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۳۶
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    زبانهای خارجی
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع شنبه ۲۲ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۶ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     غزل صدرالاشرافی
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۱۱,۲۸۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    مراقبت و زیبایی های مو
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      باملند(شمال غرب)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/03.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۵۰
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    دانش سلامت
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۴ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۵۴,۰۰۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    Sketchup & Vray
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      قیطریه
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      آنلاین/حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/04.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۴۰
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    معماری
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۳ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۲۲,۰۰۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    ایاستریتور
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      سعادت آباد(مرکزی)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      آنلاین
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/05.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۴۰
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    هنر و سینما
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۵ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۱۳,۲۵۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    مدیریت بر خویشتن
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                       باملندشمال غرب)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/06.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۳۹
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    دانش و سلامت
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۵ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                      دکتر مریم فرضی
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۱۲,۲۱۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="part 2xl:w-10/12 xl:w-11/12 lg:w-11/12 md:w-11/12 sm:w-11/12 w-11/12 h-[480px] mx-auto 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden flex">
+          <div class="swiper mySwiper05">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    افترافکت(After Effects)
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      سیدخندان
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/01.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۷۸
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    هنر و سینما
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۶ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                    مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۳۸,۰۸۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    زبان فرانسه A1.3
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      سعادت آباد (مرکزی)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      آنلاین
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/02.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۳۶
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    زبانهای خارجی
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع شنبه ۲۲ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۶ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     غزل صدرالاشرافی
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۱۱,۲۸۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    مراقبت و زیبایی های مو
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      باملند(شمال غرب)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/03.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۵۰
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    دانش سلامت
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۴ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۵۴,۰۰۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    Sketchup & Vray
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      قیطریه
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      آنلاین/حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/04.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۴۰
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    معماری
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۳ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۲۲,۰۰۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    ایاستریتور
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                      سعادت آباد(مرکزی)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      آنلاین
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/05.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۴۰
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    هنر و سینما
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۵ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                     مشخص نشده
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۱۳,۲۵۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="all w-full h-full bg-white rounded-3xl pt-6">
+                  <div class="tittle w-full px-5  text-black text-base text-right font-medium">
+                    مدیریت بر خویشتن
+                  </div>
+                  <div class="w-full flex flex-row mt-2">
+                    <div class="loc w-6/12 text-black text-xs text-right ">
+                      <i class="fas fa-map-marker-alt mr-5"></i>
+                       باملندشمال غرب)
+                    </div>
+                    <div class="loc w-6/12 text-gray-500 text-xs text-left pl-5 ">
+                      <i class="fas fa-globe"></i>
+                      حضوری
+                    </div>
+                  </div>
+                  <div class="img w-full h-3/6 mt-4 relative">
+                    <img src="./img/dore/06.png" alt="" class="rounded-tr-[60px]">
+                    <div class="w-[45px] h-[25px] bg-[#3e3c49c2] rounded-xl absolute bottom-1 left-2 flex items-center pr-2 text-xs font-normal ">
+                      <i class="fas fa-clock text-sm ml-1"></i>
+                      ۳۹
+                    </div>
+                  </div>
+                  <div class="text w-full mt-5 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-building ml-2"></i>
+                    دانش و سلامت
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="far fa-calendar"></i>
+                    تاریخ شروع یکشنبه ۲۳ بهمن ۱۴۰۱
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-users"></i>
+                    ظرفیت باقی مانده ۵ نفر
+                  </div>
+                  <div class="text w-full mt-3 text-xs text-gray-600 text-right pr-4">
+                    <i class="fas fa-user"></i>
+                      دکتر مریم فرضی
+                  </div>
+                  <div class="price w-11/12 p- bg-[#f4f4f4] text-[#6a89cc] rounded-b-[40px] mx-auto mt-2 text-base" >۱۲,۲۱۰,۰۰۰ <span class="text-xs text-gray-600">ریال</span> </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="w-full p-2 text-left pl-12 text-xs mt-4 font-medium text-[#6a89cc]">
+          <a href="#"> نمایش بیشتر >> </a>
+        </div>
+
+      </div>
+
+      <div class="information w-full h-auto pt-7 mt-12 flex flex-col">
+        <div class="tittle w-full h-[50px] p-2 pr-5 text-2xl font-semibold flex flex-row"> 
+          <img src="./img/etelaeeh/download.png" alt="" class="w-[30px] ml-2">
+          اطلاعیه ها 
+        </div>
+
+        <div class="t-all 2xl:w-11/12 xl:w-11/12 lg:w-full h-auto p-0 text-base font-semibold flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-col items-center mt-4 mb-2 mx-auto">
+
+          <div class="right 2xl:w-5/12 xl:w-5/12 lg:w-5/12 md:w-full sm:w-full w-full 2xl:h-[800px] xl:h-[860px] lg:h-[900px] mh:h-auto sm:h-auto h-auto mb-5">
+            <div class="tittle w-full h-[50px] p-2 pr-5 text-base font-semibold flex flex-row items-center"> 
+              <div class="t01 py-2 px-0.5 text-[#a3b4bc] cursor-pointer">
+                اخبار و اطلاعیه ها
+              </div>
+              <div class="t02 py-1 px-0.5 text-[#46494a] mr-10 flex cursor-pointer">
+                 <p> آخرین مقالات آموزشی </p>
+                <div class="sircle w-[30px] h-[30px] bg-gray-500 mr-2 rounded-[30px] flex justify-center items-center text-white">2</div>
+              </div>
+            </div>
+            <ul class="w-11/12 h-auto pt-7 mx-auto mt-4">
+              <li class="w-10/12 mb-4 mx-6 p-1.5 rounded-xl text-base text-gray-500 cursor-pointer"> جلسه هم اندیشی مدرسان دپارتمان کودک و نوجوان شنبه هشتم بهمن ماه 
+              </li>
+              <li class="w-10/12 mb-4 mx-6 p-1.5 rounded-xl text-base text-gray-500 cursor-pointer"> جلسه هم اندیشی مدرسان دپارتمان کودک و نوجوان شنبدوره های فشرده ی کمپ نوروزی 1402 در ایام عید دپارتمان معماری
+              </li>
+              <li class="w-10/12 mb-4 mx-6 p-1.5 rounded-xl text-base text-gray-500 cursor-pointer"> استفاده از تخفیف 30 درصدی جهت کلاس های شیفت صبح دپارتمان معماری
+              </li>
+              <li class="w-10/12 mb-4 mx-6 p-1.5 rounded-xl text-base text-gray-500 cursor-pointer"> شروع ثبت نام بوت کمپ های نوروز 1402 با تخفیفات ویژه
+              </li>
+              <li class="w-10/12 mb-4 mx-6 p-1.5 rounded-xl text-base text-gray-500 cursor-pointer"> سمینار رایگان نقش فناوری هوش مصنوعی در فرآیندهای  معماری داخلی
+              </li>
+              <li class="w-10/12 mb-4 mx-6 p-1.5 rounded-xl text-base text-gray-500 cursor-pointer"> شروع ثبت نام سومین دوره رایگان آموزش کارآفرینی کاربردی
+              </li>
+              <li class="w-10/12 mb-4 mx-6 p-1.5 rounded-xl text-base text-gray-500 cursor-pointer"> ژوژمان پایانی کارگاه طراحی لوگو هنرجویان گرافیک
+              </li>
+              <li class="w-10/12 mb-4 mx-6 p-1.5 rounded-xl text-base text-gray-500 cursor-pointer"> تخفیف ویژه ثبت نام بمناسبت روز 13 آبان
+              </li>
+              <li class="w-10/12 mb-4 mx-6 p-1.5 rounded-xl text-base text-gray-500 cursor-pointer"> همکاری مجتمع فنی تهران با دانشگاه‌های قبرس شمالی
+              </li>
+              <li class="w-10/12 mb-12 mx-6 p-1.5 rounded-xl text-base text-gray-500 cursor-pointer"> شروع ثبت نام ترم پاییز کودکان و نوجوانان
+              </li>
+            </ul>
+          </div>
+
+          <div class="left 2xl:w-7/12 xl:w-7/12 lg:w-7/12 md:w-full sm:w-full w-full 2xl:h-[800px] xl:h-[850px] lg:h-[850px] mh:h-auto sm:h-auto h-auto flex flex-col justify-start items-center">
+            <div class="img w-11/12 h-auto">
+              <img src="./img/etelaeeh/21KQ91h8K3o1O7wb.jpeg" alt="" class="2xl:w-[800px] xl:w-full lg:w-full md:w-full sm:w-full w-full rounded-[30px] mx-auto">
+            </div>
+            <div class="tittle w-11/12 text-xl text-black mx-auto mt-5">
+               شناخت قطعات الکترونیکی (بخش سوم) 
+            </div>
+
+            <div class="tittle w-full text-sm text-gray-500 mx-auto mt-9 font-normal p-3">
+               مدار الکترونیکی جریان را به منظور تقویت سیگنال، انتقال داده و محاسبات مختلف هدایت و کنترل می‌کند. می‌توان مدار الکترونیکی را با قطعات الکترونیکی مختلف مانند مقاومت‌ها، خازن‌ها، دیودها، ترانزیستورها و غیره ساخت. قطعات الکترونیکی مصرفی در لوازم الکترونیکی مصرفی مانند ماشین حساب، رایانه شخصی، چاپگر، اسکنر، فکس و غیره استفاده می‌شوند و همچنین در دستگاه‌های خانگی مانند یخچال، ماشین لباسشویی، جاروبرقی، مایکروویو و غیره.
+
+            </div>
+            <div class="read w-full flex justify-end p-5 mt-5">
+              <div class="button w-[100px] p-2 text-white text-sm bg-[#6a89cc] text-center "> بخوانید ! </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+      <div class="help w-full h-[200px] bg-[#eceff1] pt-7 mt-2  flex flex-col">
+        <div class="tittle w-full text-center text-xl font-medium p-2 mb-2">
+           نیاز به مشاوره دارید؟ 
+        </div>
+
+        <div class="tittle w-full text-center text-base  p-2 mb-2">
+           همکاران ما آماده پاسخگویی به سوالات شما می باشند
+        </div>
+
+        <select name="help" id="help" class="w-auto mx-auto p-3 rounded-3xl text-sm text-center font-medium outline-none">
+          <option value="saadat">  سعادت آباد(مرکزی) ->  ۲۷۲۹ - ۰۲۱ </option>
+          <option value="saadat">  رشت  ->  ۳۴۳۱ - ۰۱۳ </option>
+          <option value="saadat">  پیروزی  ->  ۷۷۴۱۹۱۹۸ - ۰۲۱ </option>
+          <option value="saadat">  نیاوران  ->  ۲۲۸۳۸۲۸۸ - ۰۲۱ </option>
+          <option value="saadat">  ساوه  ->  ۴۲۲۰۰۱۰۶ - ۰۸۶ </option>
+          <option value="saadat">  اصفهان  ->  ۳۴۴۴۴۰۳۰ - ۰۳۱ </option>
+          <option value="saadat">  سیدخندان  ->  ۲۲۸۶۸۶۷۰ - ۰۲۱ </option>
+          <option value="saadat">  انقلاب  ->  ۶۶۹۳۳۳۷۹ - ۰۲۱ </option>
+          <option value="saadat">  تهرانپارس  ->  ۷۷۸۸۹۹۳۷ - ۰۲۱ </option>
+          <option value="saadat">  میرداماد  ->  ۲۲۲۲۲۸۱۶ - ۰۲۱ </option>
+          <option value="saadat">  ونک  ->  ۸۸۸۸۹۷۹۶ - ۰۲۱ </option>
+          <option value="saadat">  نارمک  ->  ۷۷۲۰۳۰۶۰ - ۰۲۱ </option>
+          <option value="saadat">  البرز  ->  ۳۴۱۲۷ - ۰۲۶ </option>
+          <option value="saadat">  قیطریه  ->  ۲۲۷۶۸۹۸۰ - ۰۲۱ </option>
+          <option value="saadat">  رودهن  ->  ۷۶۵۰۸۵۶۲ - ۰۲۱ </option>
+          <option value="saadat">  پرند  ->  ۵۶۷۹۳۷۱۶ - ۰۲۱ </option>
+          <option value="saadat">  شهریار  ->  ۶۵۲۵۰۱۶۰ - ۰۲۱ </option>
+          <option value="saadat">  ورامین  ->  ۳۶۲۸۳۱۹۱ - ۰۲۱ </option>
+          <option value="saadat">  یزد  ->  ۳۷۲۸۲۳۹۸ - ۰۳۵ </option>
+          <option value="saadat">  اراک  ->  ۳۲۲۳۶۵۶۲ - ۰۸۶ </option>
+          <option value="saadat">   بروجرد ->  ۴۲۵۰۰۶۹۴ - ۰۶۶ </option>
+          <option value="saadat">  سمنان  ->  ۳۳۴۴۱۴۵۵ - ۰۲۳ </option>
+          <option value="saadat">  بابل  ->  ۳۲۲۵۱۸۰۰ - ۰۱۱ </option>
+          <option value="saadat">  بروجن  ->  ۳۴۲۳۶۳۴۴ - ۰۳۸ </option>
+          <option value="saadat">  دزفول  ->  ۴۲۲۴۲۰۰۰ - ۰۶۱ </option>
+          <option value="saadat">  کیش  ->  ۴۴۴۶۷۰۲۴ - ۰۷۶ </option>
+          <option value="saadat">  چالوس  ->  ۵۲۲۲۰۶۴۳ - ۰۱۱ </option>
+          <option value="saadat">  گرگان  ->  ۳۲۵۲۶۳۲۶ - ۰۱۷ </option>
+          <option value="saadat">  نور  ->  ۴۴۵۲۸۴۸۱ - ۰۱۱ </option>
+          <option value="saadat">  شهرقدس  ->  ۴۶۸۶۷۷۷۱ - ۰۲۱ </option>
+          <option value="saadat">  بوشهر  ->  ۳۳۵۳۵۰۲۲ - ۰۷۷ </option>
+          <option value="saadat">  تبریز  ->  ۳۳۶۹۶۲۱۹ - ۰۴۱ </option>
+          <option value="saadat">  خرم‌آباد  ->  ۳۳۳۳۵۵۰۶ - ۰۶۶ </option>
+          <option value="saadat">  سبزوار  ->  ۴۴۶۷۱۶۱۰ - ۰۵۱ </option>
+          <option value="saadat">  لاهیجان  ->  ۴۲۲۲۲۰۶۲ - ۰۱۳ </option>
+          <option value="saadat">  شهرکرد  ->  ۳۳۳۹۸۰۰۷ - ۰۳۸ </option>
+          <option value="saadat">  جویبار  ->  ۴۲۵۳۵۰۱۰ - ۰۱۱ </option>
+          <option value="saadat">  مرند  ->  ۴۲۲۶۱۳۸۵ - ۰۴۱ </option>
+          <option value="saadat">  دورود  ->  ۴۳۲۳۰۵۶۶ - ۰۶۶ </option>
+          <option value="saadat">  شیراز  ->  ۳۶۲۹۲۲۹۴ - ۰۷۱ </option>
+          <option value="saadat">  بیرجند  ->  ۳۲۴۳۵۷۳۲ - ۰۵۶ </option>
+          <option value="saadat">  زتجان  ->  ۳۳۴۷۴۸۱۵ - ۰۲۴ </option>
+          <option value="saadat">  ساری  ->  ۳۳۲۵۵۹۹۹ - ۰۱۱ </option>
+          <option value="saadat">  شاهین شهر  ->  ۴۵۲۲۸۲۰۱ - ۰۳۱ </option>
+          <option value="saadat">  مشهد  ->  ۹۱۰۱۰۹۵۰ - ۰۵۱ </option>
+          <option value="saadat">   باملند(شمال غرب) ->  ۴۴۷۳۹۹۷۱ - ۰۲۱ </option>
+          <option value="saadat">   بندرعباس(زبان) ->  ۹۱۰۱۴۴۲۵ - ۰۷۶ </option>
+          <option value="saadat">  نکا  ->  ۳۴۷۴۳۱۶۱ - ۰۱۱ </option>
+          <option value="saadat">  اکباتان  ->  ۴۴۶۸۵۰۰۹ - ۰۲۱ </option>
+          <option value="saadat">  اسلامشهر  ->  ۵۶۶۹۸۶۶۴ - ۰۲۱ </option>
+        </select>
+      </div>
+
+      <div class="footer w-full h-auto bg-[#263238] 2xl:pt-20 xl:pt-20 lg:pt-20 md:pt-10 sm:pt-10 pt-10 flex flex-col">
+        <div class="link 2xl:w-11/12 xl:w-11/12 lg:w-11/12 md:w-full sm:w-full w-full h-auto flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-col mx-auto">
+          <div class="right 2xl:w-5/12 xl:w-5/12 lg:w-5/12 md:w-full sm:w-full w-full 2xl:h-full xl:h-full lg:h-full md:h-2/6 sm:h-2/6 h-2/6">
+            <div class="tittle w-full p-3 text-white text-xl font-medium 2xl:text-right xl:text-right lg:text-right md:text-center sm:text-center text-center 2xl:mb-12 xl:mb-12 lg:mb-12 md:mb-3 sm:mb-3 mb-3"> مجتمع فنی تهران </div>
+
+            <div class="tittle w-full p-3 text-white text-base font-medium 2xl:text-right xl:text-right lg:text-right md:text-center sm:text-center text-center 2xl:block xl:block lg:block md:hidden sm:hidden hidden leading-6"> آدرس دفتر مرکزی
+              <br>
+              <span class="text-sm font-medium m-1">  سعادت آباد، بالاتر از ميدان كاج، خيابان دوم (شهيد عبقری)، بلوار بهزاد شمالی، نبش باغستان 
+              </span>
+              <br>
+              <span class="text-sm font-medium m-1">  شماره ۱۲ | ۶-۲۲۰۹۰۰۰۱ ۰۲۱ 
+              </span>
+            </div>
+
+            <div class="tittle w-full p-3 text-white text-2xl font-medium 2xl:mt-12 xl:mt-12 lg:mt-12 md:mt-1 sm:mt-1 mt-1 flex 2xl:justify-start xl:justify-start lg:justify-start md:justify-center sm:justify-center justify-center"> 
+              <i class="mx-2.5 fab fa-twitter"></i>
+              <i class="mx-2.5 fab fa-tumblr"></i>
+              <i class="mx-2.5 fab fa-telegram-plane"></i>
+              <i class="mx-2.5 fab fa-whatsapp"></i>
+              <i class="mx-2.5 fab fa-instagram"></i>
+              <i class="mx-2.5 fab fa-facebook-f"></i>
+              <i class="mx-2.5 fab fa-youtube"></i>
+            </div>
+          </div>
+
+          <div class="left 2xl:w-7/12 xl:w-7/12 lg:w-7/12 md:w-full sm:w-full w-full 2xl:h-full xl:h-full lg:h-full md:h-4/6 sm:h-4/6 h-4/6 flex">
+            <ul class="w-4/12 h-full pt-4">
+              <li class="w-11/12 text-base text-white mb-4"> بخش‌ها </li>
+              <li class="w-11/12 text-base text-white mb-2 cursor-pointer mr-2"> 
+                <i class="fas fa-chevron-left"></i>
+                انتشارات 
+              </li>
+              <li class="w-11/12 text-base text-white mb-2 cursor-pointer mr-2"> 
+                <i class="fas fa-chevron-left"></i>
+                وبلاگ دکتر سعادت 
+              </li>
+              <li class="w-11/12 text-base text-white mb-2 cursor-pointer mr-2"> 
+                <i class="fas fa-chevron-left"></i>
+                استعلام گواهینامه 
+              </li>
+              <li class="w-11/12 text-base text-white mb-2 cursor-pointer mr-2"> 
+                <i class="fas fa-chevron-left"></i>
+                کاریابی آنلاین (کارتلنت) 
+              </li>
+              <li class="w-11/12 text-base text-white mb-2 cursor-pointer mr-2"> 
+                <i class="fas fa-chevron-left"></i>
+                واحد سرمایه های انسانی 
+              </li>
+            </ul>
+
+            <ul class="w-4/12 h-full pt-4">
+              <li class="w-11/12 text-base text-white mb-4"> درباره ما </li>
+              <li class="w-11/12 text-base text-white mb-2 cursor-pointer mr-2"> 
+                <i class="fas fa-chevron-left"></i>
+                انتقادات ،پیشنهادات و اعتراضات 
+              </li>
+              <li class="w-11/12 text-base text-white mb-2 cursor-pointer mr-2"> 
+                <i class="fas fa-chevron-left"></i>
+                قوانین و مقررات
+              </li>
+              <li class="w-11/12 text-base text-white mb-2 cursor-pointer mr-2"> 
+                <i class="fas fa-chevron-left"></i>
+                تماس با ما
+              </li>
+              <li class="w-11/12 text-base text-white mb-2 cursor-pointer mr-2"> 
+                <i class="fas fa-chevron-left"></i>
+                راهنمای سامانه مجازی
+              </li>
+              <li class="w-11/12 text-base text-white mb-2 cursor-pointer mr-2"> 
+                <i class="fas fa-chevron-left"></i>
+                معرفی مجتمع فنی تهران
+              </li>
+            </ul>
+
+            <ul class="w-4/12 h-full pt-4">
+              <li class="w-11/12 text-base text-white mb-4"> آموزش ها </li>
+              <li class="w-11/12 text-base text-white mb-2 cursor-pointer mr-2"> 
+                <i class="fas fa-chevron-left"></i>
+                آموزش های سازمانی 
+              </li>
+              <li class="w-11/12 text-base text-white mb-2 cursor-pointer mr-2"> 
+                <i class="fas fa-chevron-left"></i>
+                امور بین الملل
+              </li>
+              <li class="w-11/12 text-base text-white mb-2 cursor-pointer mr-2"> 
+                <i class="fas fa-chevron-left"></i>
+                امور نمایندگی ها
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="address w-full h-auto mt-1 mx-auto 2xl:hidden xl:hidden lg:hidden md:block sm:block block text-white text-sm font-medium">
+          آدرس دفتر مرکزی
+              <br>
+              <span class="text-xs font-medium m-1">  سعادت آباد، بالاتر از ميدان كاج، خيابان دوم (شهيد عبقری)، بلوار بهزاد شمالی، نبش باغستان 
+              </span>
+              
+              <span class="text-xs font-medium m-1">  شماره ۱۲ | ۶-۲۲۰۹۰۰۰۱ ۰۲۱ 
+              </span>
+        </div>
+        <div class="img-link w-full h-auto mt-6 flex flex-row flex-wrap 2xl:justify-center xl:justify-center lg:justify-center md:justify-start sm:justify-start justify-start items-center">
+          <div class="img w-[100px] h-[100px] rounded-3xl mx-2 mb-2">
+            <img src="./img/footer/08.png" alt="" class="">
+          </div>
+          <div class="img w-[100px] h-[100px] rounded-3xl mx-2 mb-2">
+            <img src="./img/footer/07.png" alt="" class="">
+          </div>
+          <div class="img w-[100px] h-[100px] rounded-3xl mx-2 mb-2">
+            <img src="./img/footer/06.png" alt="" class="">
+          </div>
+          <div class="img w-[100px] h-[100px] rounded-3xl mx-2 mb-2">
+            <img src="./img/footer/05.png" alt="" class="">
+          </div>
+          <div class="img w-[100px] h-[100px] rounded-3xl mx-2 mb-2">
+            <img src="./img/footer/04.png" alt="" class="">
+          </div>
+          <div class="img w-[100px] h-[100px] rounded-3xl mx-2 mb-2">
+            <img src="./img/footer/03.png" alt="" class="">
+          </div>
+          <div class="img w-[100px] h-[100px] rounded-3xl mx-2 mb-2">
+            <img src="./img/footer/02.png" alt="" class="">
+          </div>
+          <div class="img w-[100px] h-[100px] rounded-3xl mx-2 mb-2">
+            <img src="./img/footer/01.png" alt="" class="">
+          </div>
+        </div>
+        <div class="text w-full h-[40px] mt-2 mb-5 text-center text-white text-sm font-medium">
+          استفاده از مطالب سایت مجتمع فنی فقط برای مقاصد غیرتجاری و با ذکر منبع بلامانع است. کلیه حقوق این سایت متعلق به مجتمع فنی تهران می باشد.
+        </div>
+      </div>
+    </div>
+
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+      document
+        .querySelector("li[data-bs-toggle=menu01]")
+        .addEventListener("mouseenter", function () {
+          document.querySelector("div.sub01").style.display = "block";
+        });
+      document
+        .querySelector("li[data-bs-toggle=menu01]")
+        .addEventListener("mouseleave", function () {
+          document.querySelector("div.sub01").style.display = "none";
+        });
+
+
+
+      document
+        .querySelector("li[data-bs-toggle=menu02]")
+        .addEventListener("mouseenter", function () {
+          document.querySelector("div.sub02").style.display = "block";
+        });
+      document
+        .querySelector("li[data-bs-toggle=menu02]")
+        .addEventListener("mouseleave", function () {
+          document.querySelector("div.sub02").style.display = "none";
+        });
+
+
+        let menusmall=document.querySelector("div.menu-sm>:nth-last-of-type(1)>:nth-last-of-type(1)")
+        let submenu=document.querySelector("div.sub03")
+        let flag=true
+        menusmall.addEventListener("click",function(){
+            if(flag===true){
+                submenu.style.display="block"
+                flag=false
+            }else{
+                submenu.style.display="none"
+                flag=true
+            }
+        })
+
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+
+        spaceBetween: 0,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+          loop: true,
+        },
+      });
+
+      var swiper = new Swiper(".mySwiper01", {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        loop: true,
+      },
+    });
+
+      var swiper = new Swiper(".mySwiper02", {
+      slidesPerView: 3.2,
+      spaceBetween: 10,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+      var swiper = new Swiper(".mySwiper03", {
+      slidesPerView: 2.1,
+      spaceBetween: 10,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+      var swiper = new Swiper(".mySwiper04", {
+      slidesPerView: 1.9,
+      spaceBetween: 10,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+      var swiper = new Swiper(".mySwiper05", {
+      slidesPerView: 1.2,
+      spaceBetween: 10,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    </script>
+  </body>
+</html>
